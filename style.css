@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+body {
+  background-color: #fff;
+  color: #4d4d4d;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  display: block;
+}
+.navbar {
+  background-color: #ececec;
+  color: #4d4d4d;
+  font-size: 18px;
+}
+.navbar-brand img {
+  width: 92px;
+  height: 70px;
+}
+.navbar .navbar-nav .nav-link {
+  color: #4d4d4d;
+  font-size: 18px;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #808080;
+}
+@media only screen and (min-width: 992px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0.05em;
+  }
+  .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+    border-right: 1px solid #4d4d4d;
+    height: 22px;
+  }
+}
+@media (min-width: 300px) and (max-width: 700px) {
+     h1 {
+        /* padding-bottom: 2px; */
+        font-size: 5vw;
+        font-weight: 600;
+       padding-bottom: 8px;
+      }
+      #btn{
+        padding: 4px 14px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        /* margin: 4px 2px; */
+        /* border-color: red; */
+        border-radius: 10px;
+        animation: none;
+      }
+   .wrap{
+        word-break: break-all;
+      }
+}
+.banner {
+  position: relative;
+  width: 100%;
+  /* display: block; */
+  height: auto;
+  text-align: center;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.banner img {
+  width: 100%;
+  height: 300px;
+  object-fit: fill;
+  object-position: bottom;
+}
+
+.banner h1 {
+  padding-bottom: 16px;
+  font-weight: 600;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.learnbtn {
+  background-color: #fff;
+  border: none;
+  color: #d52037;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 4px 2px;
+  /* border-color: red; */
+  border-radius: 12px;
+  animation: none;
+}
+.learnbtn:hover,
+.learnbtn:focus {
+  outline: none;
+}
+.modal {
+  color: #4d4d4d;
+}
+.modal-header {
+  background-color: #db1e36;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+}
+@media only screen and (max-width: 320px) {
+  body {
+    padding-bottom: 16px;
+
+    font-size: 2em;
+  }
+}
+
+section .container .row .content {
+  padding: 40px;
+}
+.col-12 {
+  padding: 50px;
+  color: #d52037;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+form {
+  padding: 25px;
+}
+form input[type] {
+  background-color: #e4e4e4;
+  height: 48px;
+  border-radius: 12px;
+}
+
+form input::placeholder {
+  font-style: italic;
+  color: rgb(210, 213, 215);
+}
+form button {
+  background-color: #db1e36;
+  font-size: 18px;
+  font-weight: regular;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 50px;
+}
+iframe {
+  border-radius: 12px;
+  text-decoration-style: none;
+}
+footer {
+  background-color: #cecece;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+}
+footer p {
+  align-items: center;
+}

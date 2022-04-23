@@ -30,19 +30,19 @@
                             <a class="nav-link active text-danger px-3" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="#about">About</a>
+                            <a class="nav-link px-3 changeable" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="#">Services</a>
+                            <a class="nav-link px-3 changeable" href="#">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="#">Projects</a>
+                            <a class="nav-link px-3 changeable" href="#">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="#">Our Team</a>
+                            <a class="nav-link px-3 changeable" href="#">Our Team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="#contact">Contact</a>
+                            <a class="nav-link px-3 changeable" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -173,6 +173,21 @@
             <p class="m-0">Copyright 2022 by Ask.com. All Rights Reserved.</p>
         </footer>
 
+ <script>
+        var links = document.getElementsByClassName('changeable');
+        function changeColorToRed(e) {
+            e.target.style.color = e.target.style.color ? null : 'red';
+        }
+        function changeColorToBlack(e) {
+            e.target.style.color = e.target.style.color ? null : 'black';
+        }
+        for (var i = 0; i < links.length; i++) {
+            links[i].addEventListener('focus', changeColorToRed);
+            links[i].addEventListener('blur', changeColorToBlack);
+
+        }
+       
+ </script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>

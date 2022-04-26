@@ -131,7 +131,7 @@ section .container .row .content {
 }
 
 form {
-  padding: 25px;
+/*   padding: 25px; */
 }
 form input[type] {
   background-color: #e4e4e4;

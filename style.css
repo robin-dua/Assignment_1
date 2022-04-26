@@ -8,6 +8,16 @@ body {
   font-weight: normal;
   display: block;
 }
+#navbarToggler11 .navbar-nav li > a {
+  color: #4D4D4D;
+}
+#navbarToggler11 .navbar-nav li > a:hover,
+#navbarToggler11 .navbar-nav li > a:focus {
+  color: #D52037;
+}
+#navbarToggler11 .navbar-nav li.active > a {
+  color: #D52037;
+}
 .navbar {
   background-color: #ececec;
   color: #4d4d4d;

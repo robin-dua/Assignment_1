@@ -154,7 +154,7 @@ form input::placeholder {
 form button {
   background-color: #db1e36;
   font-size: 18px;
-  font-weight: regular;
+  font-weight: 600;
   color: #fff;
   border: none;
   border-radius: 12px;

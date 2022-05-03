@@ -160,6 +160,26 @@ form button {
   border-radius: 12px;
   padding: 10px 50px;
 }
+ .error input {
+  border: 3px red solid;
+}
+.error textarea {
+  border: 3px red solid;
+}
+.success input {
+  border: 3px green solid;
+}
+.success textarea {
+  border: 3px green solid;
+}
+.form-group span {
+  font-size: 15px;
+  color: red;
+  visibility: hidden;
+ }
+.error span {
+   visibility: visible;
+}
 iframe {
   border-radius: 12px;
   text-decoration-style: none;

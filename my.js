@@ -1,11 +1,3 @@
-//navbar links toggling colors
-$( '#navbarToggler11 .navbar-nav a' ).on('click',
-function () {
-$( '#navbarToggler11 .navbar-nav' ).find( 'li.active' )
-.removeClass( 'active' );
-$( this ).parent( 'li' ).addClass( 'active' );
-});
-
 // Form validation
 
 const form = document.querySelector('#myForm');

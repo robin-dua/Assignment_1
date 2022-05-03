@@ -177,6 +177,12 @@
         </footer>
 
  <script src="my.js">
+$( '#navbarToggler11 .navbar-nav a' ).on('click',
+function () {
+$( '#navbarToggler11 .navbar-nav' ).find( 'li.active' )
+.removeClass( 'active' );
+$( this ).parent( 'li' ).addClass( 'active' );
+});
  </script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

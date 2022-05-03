@@ -140,19 +140,19 @@
                 </div>
                 <div class="row content">
                     <div class="col-md-6">
-                        <form>
+                        <form id="myForm" method="post" nonvalidate>
                             <div class="form-group">
                                 <label for="name">Name</label>
-                                <input type="text" class="form-control" placeholder="Please enter your name">
+                                <input type="text" class="form-control" id="username" placeholder="Please enter your name"  onKeyup="validateForm()" name="username" style="background-color: #e4e4e4;" autocomplete="off">
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" class="form-control" placeholder="Please enter your email">
+                                <input type="email" class="form-control" id="email" placeholder="Please enter your email"  onKeyup="validateForm()" name="email" style="background-color: #e4e4e4;" autocomplete="off">
                             </div>
                             <div class="form-group">
                                 <label for="message">Message</label>
-                                <textarea class="form-control" cols="20" rows="4"
-                                    style="resize: none;background-color:  #e4e4e4;border-radius: 12px;"></textarea>
+                                <textarea class="form-control" id="message" cols="20" rows="4"
+                                    style="resize: none;background-color:  #e4e4e4;border-radius: 12px;"  onKeyup="validateForm()" name="message" autocomplete="off"></textarea>
                             </div>
                             <button type="submit">Submit</button>
                         </form>
@@ -173,15 +173,7 @@
             <p class="m-0">Copyright 2022 by Ask.com. All Rights Reserved.</p>
         </footer>
 
- <script>
-       $( '#navbarToggler11 .navbar-nav a' ).on('click',
-              function () {
-      $( '#navbarToggler11 .navbar-nav' ).find( 'li.active' )
-      .removeClass( 'active' );
-      $( this ).parent( 'li' ).addClass( 'active' );
-  });
-       
-       
+ <script src="myscript.js">
  </script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

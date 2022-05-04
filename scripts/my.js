@@ -44,7 +44,10 @@ function validateForm() {
     //Username validation
     if (usernameInput.value == '') {
         setError(usernameInput, 'Name cannot be blank ');
-    } else if (!usernameInput.value.match(correct_way)) {
+    } else if(usernameInput.value.length < 3){
+                setError(usernameInput, 'Name must be of aleast 3 alphabets');
+     }
+    else if (!usernameInput.value.match(correct_way)) {
         setError(usernameInput, 'Name cannot contain special characters or numbers and should only be alphabets');
     } else {
         setSuccess(usernameInput);

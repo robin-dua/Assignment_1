@@ -62,7 +62,7 @@ function validateForm() {
     //Message validation
     if (messageInput.value == '') {
         setError(messageInput, 'Message cannot be blank');
-    } else if (messageInput.value.length <= 40) {
+    } else if (messageInput.value.length < 40) {
         setError(messageInput, 'Message should be a minimum of 40 characters long');
     } else {
         setSuccess(messageInput);

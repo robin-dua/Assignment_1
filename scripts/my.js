@@ -20,7 +20,7 @@ form.addEventListener('submit', (event) => {
 
 //Email validation function
 function isEmailValid(email) {
-    const reg = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    const reg =/^[a-zA-Z0-9._]{3,}@[a-zA-Z]{5,}[.]{1}[a-zA-Z.]{3,6}$/;
 
     return reg.test(email);
 }
